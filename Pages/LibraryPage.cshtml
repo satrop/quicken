@@ -1,0 +1,1147 @@
+﻿@page
+@model Quicken.Pages.LibraryPageModel
+@{
+    Layout = "~/Pages/Shared/_TwoColumnLayout.cshtml";
+    ViewData["Title"] = "Disclaimer and Disclosure Library";
+    ViewData["PageClass"] = "theme-1";
+}
+
+<div class="filters-wrapper">
+    <div class="filters">
+        <div class="filters--option">
+            <button>
+                Business Area
+            </button>
+            <div class="filters--dropdown">
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-1" type="checkbox" value="Biz Dev" id="item1">
+                        Biz Dev
+                    </label>
+                </div>
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-1" type="checkbox" value="Marketing" id="item2">
+                        Marketing
+                    </label>
+                </div>
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-1" type="checkbox" value="One Reverse Mortgage" id="item3">
+                        One Reverse Mortgage
+                    </label>
+                </div>
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-1" type="checkbox" value="Servicing" id="item4">
+                        Servicing
+                    </label>
+                </div>
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-1" type="checkbox" value="Spanish" id="item5">
+                        Spanish
+                    </label>
+                </div>
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-1" type="checkbox" value="Talent Brand" id="item6">
+                        Talent Brand
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="filters--option">
+            <button>
+                Mortgage Product
+            </button>
+            <div class="filters--dropdown">
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-2" type="checkbox" value="Conventional Loans" id="b-item1">
+                        Conventional Loans
+                    </label>
+                </div>
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-2" type="checkbox" value="FHA Loans" id="b-item2">
+                        FHA Loans
+                    </label>
+                </div>
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-2" type="checkbox" value="Jumbo Loans" id="b-item3">
+                        Jumbo Loans
+                    </label>
+                </div>
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-2" type="checkbox" value="USDA Loans" id="b-item4">
+                        USDA Loans
+                    </label>
+                </div>
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-2" type="checkbox" value="VA Loans" id="b-item5">
+                        VA Loans
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="filters--option">
+            <button>
+                Mortgage Program
+            </button>
+            <div class="filters--dropdown">
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-3" type="checkbox" value="FHA Streamline" id="c-item1">
+                        FHA Streamline
+                    </label>
+                </div>
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-3" type="checkbox" value="RateShield" id="c-item2">
+                        RateShield
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="filters--option">
+            <button>
+                Disclaimer Type
+            </button>
+            <div class="filters--dropdown">
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-4" type="checkbox" value="Claims" id="d-item1">
+                        Claims
+                    </label>
+                </div>
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-4" type="checkbox" value="Eligibility" id="d-item2">
+                        Eligibility
+                    </label>
+                </div>
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-4" type="checkbox" value="Licensing" id="d-item3">
+                        Licensing
+                    </label>
+                </div>
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-4" type="checkbox" value="Offers" id="d-item4">
+                        Offers
+                    </label>
+                </div>
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-4" type="checkbox" value="Opt-out" id="d-item5">
+                        Opt-out
+                    </label>
+                </div>
+                <div class="form-style-element">
+                    <label>
+                        <input class="igx-checkbox" name="dropdown-4" type="checkbox" value="Rates" id="d-item6">
+                        Rates
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="filters--option">
+            <button type="reset" class="clear">
+                Clear
+            </button>
+        </div>
+    </div>
+</div>
+<div class="filter-list-wrapper">
+    <div class="filters-list">
+        <div class="filters-list__header">Business Area</div>
+        <button class="filters-list__item" data-dropdown-1="item1">
+            Biz Dev
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <button class="modal-trigger" data-modal="modal-1">HLBP Generic Disclosure</button>
+                <li>
+                    <button class="modal-trigger" data-modal="modal-2">Relocation Cyber Monday Disclosure 2020</button>
+                </li>
+                <li>
+                    <button>Realtor Partnership Advertising Disclosure</button>
+                </li>
+                <li>
+                    <button>$1500 Mobility Empowered Disclosure</button>
+                </li>
+                <li>
+                    <button>ADP $100 Fee Cap Disclaimer</button>
+                </li>
+                <li>
+                    <button>Be Connected Offer Disclosure</button>
+                </li>
+                <li>
+                    <button>Biz Dev- RELO- Lump Sum Disclaimer</button>
+                </li>
+                <li>
+                    <button>Biz Dev Relo Lump Sum Eligibility Disclaimer</button>
+                </li>
+                <li>
+                    <button>Copyright Statement (when QL logo is NOT present)</button>
+                </li>
+                <li>
+                    <button>Copyright Statement (when QL logo IS present)</button>
+                </li>
+                <li>
+                    <button>HLBP Hotels Choice Disclaimer 2021</button>
+                </li>
+                <li>
+                    <button>HLBP-Hawaiian Disclaimer 2021</button>
+                </li>
+                <li>
+                    <button>Home Depot $500 Offer Disclosure</button>
+                </li>
+                <li>
+                    <button>Home Depot 15% Off Disclosure</button>
+                </li>
+                <li>
+                    <button>Influence Relocation Offer Disclosure</button>
+                </li>
+                <li>
+                    <button>Jackson Inc. Affiliate Disclosure</button>
+                </li>
+                <li>
+                    <button>Mass Mutual Disclosure</button>
+                </li>
+                <li>
+                    <button>Mortgage First Product Disclosure</button>
+                </li>
+                <li>
+                    <button>Mortgage Insiders Google or Facebook Employee Offer Disclosure</button>
+                </li>
+                <li>
+                    <button>Mortgage Insiders Ribbon Disclaimer</button>
+                </li>
+                <li>
+                    <button>Mortgage Insiders: $500 + $750 Offer</button>
+                </li>
+                <li>
+                    <button>Mortgage Insiders: $500 + Free Appraisal Offer</button>
+                </li>
+                <li>
+                    <button>Mortgage Insiders: $500 Credit Offer</button>
+                </li>
+                <li>
+                    <button>Mortgage Insiders: $500 Gift Card + Closing Credit</button>
+                </li>
+                <li>
+                    <button>Mortgage Insiders: $500 Monetary Offer</button>
+                </li>
+                <li>
+                    <button>Mortgage Insiders: $750 Agent Partner Referral Offer</button>
+                </li>
+                <li>
+                    <button>New Construction Condo Program Disclosure</button>
+                </li>
+                <li>
+                    <button>Q3 HLBP Disclaimer</button>
+                </li>
+                <li>
+                    <button>Relocation Cyber Monday Approval Letter Disclosure</button>
+                </li>
+                <li>
+                    <button>Rocket Account Disclosure</button>
+                </li>
+                <li>
+                    <button>RPR Flash Sale Disclaimer</button>
+                </li>
+                <li>
+                    <button>RPR Pricing Disclaimer</button>
+                </li>
+                <li>
+                    <button>Savings May Vary Disclaimer</button>
+                </li>
+                <li>
+                    <button>State Farm 3k Incentive Disclaimer</button>
+                </li>
+                <li>
+                    <button>State Farm Special Offer Disclosure</button>
+                </li>
+                <li>
+                    <button>Team Member Referral Client Offer</button>
+                </li>
+                <li>
+                    <button>United Airlines Offer Disclosure</button>
+                </li>
+                <li>
+                    <button>Verified Approval Disclaimer (Real Estate Agent Version)</button>
+                </li>
+            </ul>
+        </div>
+
+        <button class="filters-list__item" data-dropdown-1="item2">
+            Marketing
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>Marketing Item 1</Button>
+                </li>
+                <li>
+                    <Button>Marketing Item 2</Button>
+                </li>
+                <li>
+                    <Button>Marketing Item 3</Button>
+                </li>
+                <li>
+                    <Button>Marketing Item 4</Button>
+                </li>
+                <li>
+                    <Button>Marketing Item 5</Button>
+                </li>
+                <li>
+                    <Button>Marketing Item 6</Button>
+                </li>
+                <li>
+                    <Button>Marketing Item 7</Button>
+                </li>
+                <li>
+                    <Button>Marketing Item 8</Button>
+                </li>
+                <li>
+                    <Button>Marketing Item 9</Button>
+                </li>
+                <li>
+                    <Button>Marketing Item 10</Button>
+                </li>
+            </ul>
+
+
+            <button class="filters-list__item--inner" data-dropdown-1="item2-b">
+                Marketing - B
+                <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </button>
+            <div class="filters-list__dropdown--inner">
+                <ul>
+                    <li>
+                        <Button>Marketing - B Item 1</Button>
+                    </li>
+                    <li>
+                        <Button>Marketing - B Item 2</Button>
+                    </li>
+                    <li>
+                        <Button>Marketing - B Item 3</Button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="filters-list__item" data-dropdown-1="item3">
+            One Reverse Mortgage
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>One Reverse Mortgage Item 1</Button>
+                </li>
+                <li>
+                    <Button>One Reverse Mortgage Item 2</Button>
+                </li>
+                <li>
+                    <Button>One Reverse Mortgage Item 3</Button>
+                </li>
+                <li>
+                    <Button>One Reverse Mortgage Item 4</Button>
+                </li>
+                <li>
+                    <Button>One Reverse Mortgage Item 5</Button>
+                </li>
+                <li>
+                    <Button>One Reverse Mortgage Item 6</Button>
+                </li>
+                <li>
+                    <Button>One Reverse Mortgage Item 7</Button>
+                </li>
+                <li>
+                    <Button>One Reverse Mortgage Item 8</Button>
+                </li>
+                <li>
+                    <Button>One Reverse Mortgage Item 9</Button>
+                </li>
+                <li>
+                    <Button>One Reverse Mortgage Item 10</Button>
+                </li>
+            </ul>
+        </div>
+
+        <button class="filters-list__item" data-dropdown-1="item4">
+            Servicing
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>Servicing Item 1</Button>
+                </li>
+                <li>
+                    <Button>Servicing Item 2</Button>
+                </li>
+                <li>
+                    <Button>Servicing Item 3</Button>
+                </li>
+                <li>
+                    <Button>Servicing Item 4</Button>
+                </li>
+                <li>
+                    <Button>Servicing Item 5</Button>
+                </li>
+                <li>
+                    <Button>Servicing Item 6</Button>
+                </li>
+                <li>
+                    <Button>Servicing Item 7</Button>
+                </li>
+                <li>
+                    <Button>Servicing Item 8</Button>
+                </li>
+                <li>
+                    <Button>Servicing Item 9</Button>
+                </li>
+                <li>
+                    <Button>Servicing Item 10</Button>
+                </li>
+            </ul>
+        </div>
+
+        <button class="filters-list__item" data-dropdown-1="item5">
+            Spanish
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>Spanish Item 1</Button>
+                </li>
+                <li>
+                    <Button>Spanish Item 2</Button>
+                </li>
+                <li>
+                    <Button>Spanish Item 3</Button>
+                </li>
+                <li>
+                    <Button>Spanish Item 4</Button>
+                </li>
+                <li>
+                    <Button>Spanish Item 5</Button>
+                </li>
+                <li>
+                    <Button>Spanish Item 6</Button>
+                </li>
+                <li>
+                    <Button>Spanish Item 7</Button>
+                </li>
+                <li>
+                    <Button>Spanish Item 8</Button>
+                </li>
+                <li>
+                    <Button>Spanish Item 9</Button>
+                </li>
+                <li>
+                    <Button>Spanish Item 10</Button>
+                </li>
+            </ul>
+        </div>
+
+        <button class="filters-list__item" data-dropdown-1="item6">
+            Talent Brand
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>Talent Brand Item 1</Button>
+                </li>
+                <li>
+                    <Button>Talent Brand Item 2</Button>
+                </li>
+                <li>
+                    <Button>Talent Brand Item 3</Button>
+                </li>
+                <li>
+                    <Button>Talent Brand Item 4</Button>
+                </li>
+                <li>
+                    <Button>Talent Brand Item 5</Button>
+                </li>
+                <li>
+                    <Button>Talent Brand Item 6</Button>
+                </li>
+                <li>
+                    <Button>Talent Brand Item 7</Button>
+                </li>
+                <li>
+                    <Button>Talent Brand Item 8</Button>
+                </li>
+                <li>
+                    <Button>Talent Brand Item 9</Button>
+                </li>
+                <li>
+                    <Button>Talent Brand Item 10</Button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="filters-list">
+        <div class="filters-list__header">Mortgage Product</div>
+        <button class="filters-list__item" data-dropdown-2="item1">
+            Conventional Loans
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>Conventional Loans Item 1</Button>
+                </li>
+                <li>
+                    <Button>Conventional Loans Item 2</Button>
+                </li>
+                <li>
+                    <Button>Conventional Loans Item 3</Button>
+                </li>
+                <li>
+                    <Button>Conventional Loans Item 4</Button>
+                </li>
+                <li>
+                    <Button>Conventional Loans Item 5</Button>
+                </li>
+                <li>
+                    <Button>Conventional Loans Item 6</Button>
+                </li>
+                <li>
+                    <Button>Conventional Loans Item 7</Button>
+                </li>
+                <li>
+                    <Button>Conventional Loans Item 8</Button>
+                </li>
+                <li>
+                    <Button>Conventional Loans Item 9</Button>
+                </li>
+                <li>
+                    <Button>Conventional Loans Item 10</Button>
+                </li>
+            </ul>
+        </div>
+
+        <button class="filters-list__item" data-dropdown-2="item2">
+            FHA Loans
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>FHA Loans Item 1</Button>
+                </li>
+                <li>
+                    <Button>FHA Loans Item 2</Button>
+                </li>
+                <li>
+                    <Button>FHA Loans Item 3</Button>
+                </li>
+                <li>
+                    <Button>FHA Loans Item 4</Button>
+                </li>
+                <li>
+                    <Button>FHA Loans Item 5</Button>
+                </li>
+                <li>
+                    <Button>FHA Loans Item 6</Button>
+                </li>
+                <li>
+                    <Button>FHA Loans Item 7</Button>
+                </li>
+                <li>
+                    <Button>FHA Loans Item 8</Button>
+                </li>
+                <li>
+                    <Button>FHA Loans Item 9</Button>
+                </li>
+                <li>
+                    <Button>FHA Loans Item 10</Button>
+                </li>
+            </ul>
+        </div>
+
+        <button class="filters-list__item" data-dropdown-2="item3">
+            Jumbo Loans
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>Jumbo Loans Item 1</Button>
+                </li>
+                <li>
+                    <Button>Jumbo Loans Item 2</Button>
+                </li>
+                <li>
+                    <Button>Jumbo Loans Item 3</Button>
+                </li>
+                <li>
+                    <Button>Jumbo Loans Item 4</Button>
+                </li>
+                <li>
+                    <Button>Jumbo Loans Item 5</Button>
+                </li>
+                <li>
+                    <Button>Jumbo Loans Item 6</Button>
+                </li>
+                <li>
+                    <Button>Jumbo Loans Item 7</Button>
+                </li>
+                <li>
+                    <Button>Jumbo Loans Item 8</Button>
+                </li>
+                <li>
+                    <Button>Jumbo Loans Item 9</Button>
+                </li>
+                <li>
+                    <Button>Jumbo Loans Item 10</Button>
+                </li>
+            </ul>
+        </div>
+
+        <button class="filters-list__item" data-dropdown-2="item4">
+            USDA Loans
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>USDA Loans Item 1</Button>
+                </li>
+                <li>
+                    <Button>USDA Loans Item 2</Button>
+                </li>
+                <li>
+                    <Button>USDA Loans Item 3</Button>
+                </li>
+                <li>
+                    <Button>USDA Loans Item 4</Button>
+                </li>
+                <li>
+                    <Button>USDA Loans Item 5</Button>
+                </li>
+                <li>
+                    <Button>USDA Loans Item 6</Button>
+                </li>
+                <li>
+                    <Button>USDA Loans Item 7</Button>
+                </li>
+                <li>
+                    <Button>USDA Loans Item 8</Button>
+                </li>
+                <li>
+                    <Button>USDA Loans Item 9</Button>
+                </li>
+                <li>
+                    <Button>USDA Loans Item 10</Button>
+                </li>
+            </ul>
+        </div>
+
+        <button class="filters-list__item" data-dropdown-2="item5">
+            VA Loans
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>VA Loans Item 1</Button>
+                </li>
+                <li>
+                    <Button>VA Loans Item 2</Button>
+                </li>
+                <li>
+                    <Button>VA Loans Item 3</Button>
+                </li>
+                <li>
+                    <Button>VA Loans Item 4</Button>
+                </li>
+                <li>
+                    <Button>VA Loans Item 5</Button>
+                </li>
+                <li>
+                    <Button>VA Loans Item 6</Button>
+                </li>
+                <li>
+                    <Button>VA Loans Item 7</Button>
+                </li>
+                <li>
+                    <Button>VA Loans Item 8</Button>
+                </li>
+                <li>
+                    <Button>VA Loans Item 9</Button>
+                </li>
+                <li>
+                    <Button>VA Loans Item 10</Button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="filters-list">
+        <div class="filters-list__header">Mortgage Program</div>
+        <button class="filters-list__item" data-dropdown-3="item1">
+            FHA Streamline
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>FHA Streamline Item 1</Button>
+                </li>
+                <li>
+                    <Button>FHA Streamline Item 2</Button>
+                </li>
+                <li>
+                    <Button>FHA Streamline Item 3</Button>
+                </li>
+                <li>
+                    <Button>FHA Streamline Item 4</Button>
+                </li>
+                <li>
+                    <Button>FHA Streamline Item 5</Button>
+                </li>
+                <li>
+                    <Button>FHA Streamline Item 6</Button>
+                </li>
+                <li>
+                    <Button>FHA Streamline Item 7</Button>
+                </li>
+                <li>
+                    <Button>FHA Streamline Item 8</Button>
+                </li>
+                <li>
+                    <Button>FHA Streamline Item 9</Button>
+                </li>
+                <li>
+                    <Button>FHA Streamline Item 10</Button>
+                </li>
+            </ul>
+        </div>
+
+        <button class="filters-list__item" data-dropdown-3="item2">
+            RateShield
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>RateShield Item 1</Button>
+                </li>
+                <li>
+                    <Button>RateShield Item 2</Button>
+                </li>
+                <li>
+                    <Button>RateShield Item 3</Button>
+                </li>
+                <li>
+                    <Button>RateShield Item 4</Button>
+                </li>
+                <li>
+                    <Button>RateShield Item 5</Button>
+                </li>
+                <li>
+                    <Button>RateShield Item 6</Button>
+                </li>
+                <li>
+                    <Button>RateShield Item 7</Button>
+                </li>
+                <li>
+                    <Button>RateShield Item 8</Button>
+                </li>
+                <li>
+                    <Button>RateShield Item 9</Button>
+                </li>
+                <li>
+                    <Button>RateShield Item 10</Button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="filters-list">
+        <div class="filters-list__header">Disclaimer Type</div>
+        <button class="filters-list__item" data-dropdown-4="item1">
+            Claims
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>Claims Item 1</Button>
+                </li>
+                <li>
+                    <Button>Claims Item 2</Button>
+                </li>
+                <li>
+                    <Button>Claims Item 3</Button>
+                </li>
+                <li>
+                    <Button>Claims Item 4</Button>
+                </li>
+                <li>
+                    <Button>Claims Item 5</Button>
+                </li>
+                <li>
+                    <Button>Claims Item 6</Button>
+                </li>
+                <li>
+                    <Button>Claims Item 7</Button>
+                </li>
+                <li>
+                    <Button>Claims Item 8</Button>
+                </li>
+                <li>
+                    <Button>Claims Item 9</Button>
+                </li>
+                <li>
+                    <Button>Claims Item 10</Button>
+                </li>
+            </ul>
+        </div>
+
+        <button class="filters-list__item" data-dropdown-4="item2">
+            Eligibility
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>Eligibility Item 1</Button>
+                </li>
+                <li>
+                    <Button>Eligibility Item 2</Button>
+                </li>
+                <li>
+                    <Button>Eligibility Item 3</Button>
+                </li>
+                <li>
+                    <Button>Eligibility Item 4</Button>
+                </li>
+                <li>
+                    <Button>Eligibility Item 5</Button>
+                </li>
+                <li>
+                    <Button>Eligibility Item 6</Button>
+                </li>
+                <li>
+                    <Button>Eligibility Item 7</Button>
+                </li>
+                <li>
+                    <Button>Eligibility Item 8</Button>
+                </li>
+                <li>
+                    <Button>Eligibility Item 9</Button>
+                </li>
+                <li>
+                    <Button>Eligibility Item 10</Button>
+                </li>
+            </ul>
+        </div>
+
+        <button class="filters-list__item" data-dropdown-4="item3">
+            Licensing
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>Licensing Item 1</Button>
+                </li>
+                <li>
+                    <Button>Licensing Item 2</Button>
+                </li>
+                <li>
+                    <Button>Licensing Item 3</Button>
+                </li>
+                <li>
+                    <Button>Licensing Item 4</Button>
+                </li>
+                <li>
+                    <Button>Licensing Item 5</Button>
+                </li>
+                <li>
+                    <Button>Licensing Item 6</Button>
+                </li>
+                <li>
+                    <Button>Licensing Item 7</Button>
+                </li>
+                <li>
+                    <Button>Licensing Item 8</Button>
+                </li>
+                <li>
+                    <Button>Licensing Item 9</Button>
+                </li>
+                <li>
+                    <Button>Licensing Item 10</Button>
+                </li>
+            </ul>
+        </div>
+
+        <button class="filters-list__item" data-dropdown-4="item4">
+            Offers
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>Offers Item 1</Button>
+                </li>
+                <li>
+                    <Button>Offers Item 2</Button>
+                </li>
+                <li>
+                    <Button>Offers Item 3</Button>
+                </li>
+                <li>
+                    <Button>Offers Item 4</Button>
+                </li>
+                <li>
+                    <Button>Offers Item 5</Button>
+                </li>
+                <li>
+                    <Button>Offers Item 6</Button>
+                </li>
+                <li>
+                    <Button>Offers Item 7</Button>
+                </li>
+                <li>
+                    <Button>Offers Item 8</Button>
+                </li>
+                <li>
+                    <Button>Offers Item 9</Button>
+                </li>
+                <li>
+                    <Button>Offers Item 10</Button>
+                </li>
+            </ul>
+        </div>
+
+        <button class="filters-list__item" data-dropdown-4="item5">
+            Opt-out
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>Opt-out Item 1</Button>
+                </li>
+                <li>
+                    <Button>Opt-out Item 2</Button>
+                </li>
+                <li>
+                    <Button>Opt-out Item 3</Button>
+                </li>
+                <li>
+                    <Button>Opt-out Item 4</Button>
+                </li>
+                <li>
+                    <Button>Opt-out Item 5</Button>
+                </li>
+                <li>
+                    <Button>Opt-out Item 6</Button>
+                </li>
+                <li>
+                    <Button>Opt-out Item 7</Button>
+                </li>
+                <li>
+                    <Button>Opt-out Item 8</Button>
+                </li>
+                <li>
+                    <Button>Opt-out Item 9</Button>
+                </li>
+                <li>
+                    <Button>Opt-out Item 10</Button>
+                </li>
+            </ul>
+        </div>
+
+        <button class="filters-list__item" data-dropdown-4="item6">
+            Rates
+            <svg width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <div class="filters-list__dropdown">
+            <ul>
+                <li>
+                    <Button>Rates Item 1</Button>
+                </li>
+                <li>
+                    <Button>Rates Item 2</Button>
+                </li>
+                <li>
+                    <Button>Rates Item 3</Button>
+                </li>
+                <li>
+                    <Button>Rates Item 4</Button>
+                </li>
+                <li>
+                    <Button>Rates Item 5</Button>
+                </li>
+                <li>
+                    <Button>Rates Item 6</Button>
+                </li>
+                <li>
+                    <Button>Rates Item 7</Button>
+                </li>
+                <li>
+                    <Button>Rates Item 8</Button>
+                </li>
+                <li>
+                    <Button>Rates Item 9</Button>
+                </li>
+                <li>
+                    <Button>Rates Item 10</Button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Modals -->
+<div class="igx-fade"></div>
+<div class="igx-modal" data-modal="modal-1">
+    <div class="igx-modal__header">
+        <div class="igx-modal__header_title">
+            HLBP Generic Disclosure - Making this a longer title to create a line wrap
+        </div>
+        <div class="buttons-wrapper">
+            <button class="copy-btn" data-clipboard-target="#text1">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill-rule="evenodd" d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z"></path>
+                    <path d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z"></path>
+                </svg>
+                <span>
+                    Copy Contents
+                </span>
+            </button>
+            <button class="igx-modal__header_close" aria-label="Close this modal.">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill-rule="evenodd" d="M5.72 5.72a.75.75 0 011.06 0L12 10.94l5.22-5.22a.75.75 0 111.06 1.06L13.06 12l5.22 5.22a.75.75 0 11-1.06 1.06L12 13.06l-5.22 5.22a.75.75 0 01-1.06-1.06L10.94 12 5.72 6.78a.75.75 0 010-1.06z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="igx-modal__sub-header">
+        <div class="igx-modal__sub-header_section">
+            <b>Unique Identifier</b>: x160313
+        </div>
+        <div class="igx-modal__sub-header_section">
+            <b>Disclaimer Owner</b>: Legal Marketing Review
+        </div>
+        <div class="igx-modal__sub-header_section">
+            <b>Disclaimer Text Last Modified</b>: July 12, 2021, at 1:32 p.m. ET
+        </div>
+        <div class="igx-modal__sub-header_section">
+            <b>Disclaimer Usage Notes</b>: Use this disclosure when advertising the Home Loan Benefit Partner program offer.
+        </div>
+    </div>
+    <div class="igx-modal__body">
+        <span id="text1">
+            <p>Clients will receive a $2,000 credit toward their closing costs when they close on Qualified Mortgage (QM) conventional, government and high-balance loans offered by Rocket Mortgage with balances greater than $100,000. Loans with balances less than $100,000 will receive a $1,250 credit. Offer does not extend to any non-QM products or Agency Plus products. Offer valid on new applications received on or after January 1, 2021. This offer is only available to clients who call the dedicated benefit phone number or go through the dedicated benefit website, VIP.RocketMortgage.com, submit an application and close their loan through the Rocket Mortgage Home Loan Benefit Partner program. This offer cannot be retroactively applied to previously closed loans or loans that were already in process earlier than January 1, 2021. Offer expires December 31, 2021, at 11:59 p.m. ET. Offer not valid if application is submitted by a mortgage broker or from any method outside the dedicated benefit phone number or website. Rocket Mortgage reserves the right to cancel this offer at any time. Offer is nontransferable. Offer may not be redeemed for cash or equivalent. Acceptance of this offer constitutes acceptance of these terms and conditions, which are subject to change at the sole discretion of Rocket Mortgage. This is not a commitment to lend. Additional restrictions/conditions may apply. Not valid with any other discount or promotion.</p>
+        </span>
+
+    </div>
+</div>
+<div class="igx-modal" data-modal="modal-2">
+    <div class="igx-modal__header">
+        <div class="igx-modal__header_title">
+            Relocation Cyber Monday Disclosure 2020
+        </div>
+        <div class="buttons-wrapper">
+            <button class="copy-btn" data-clipboard-target="#text1">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill-rule="evenodd" d="M7.024 3.75c0-.966.784-1.75 1.75-1.75H20.25c.966 0 1.75.784 1.75 1.75v11.498a1.75 1.75 0 01-1.75 1.75H8.774a1.75 1.75 0 01-1.75-1.75V3.75zm1.75-.25a.25.25 0 00-.25.25v11.498c0 .139.112.25.25.25H20.25a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H8.774z"></path>
+                    <path d="M1.995 10.749a1.75 1.75 0 011.75-1.751H5.25a.75.75 0 110 1.5H3.745a.25.25 0 00-.25.25L3.5 20.25c0 .138.111.25.25.25h9.5a.25.25 0 00.25-.25v-1.51a.75.75 0 111.5 0v1.51A1.75 1.75 0 0113.25 22h-9.5A1.75 1.75 0 012 20.25l-.005-9.501z"></path>
+                </svg>
+                <span>
+                    Copy Contents
+                </span>
+            </button>
+            <button class="igx-modal__header_close" aria-label="Close this modal.">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill-rule="evenodd" d="M5.72 5.72a.75.75 0 011.06 0L12 10.94l5.22-5.22a.75.75 0 111.06 1.06L13.06 12l5.22 5.22a.75.75 0 11-1.06 1.06L12 13.06l-5.22 5.22a.75.75 0 01-1.06-1.06L10.94 12 5.72 6.78a.75.75 0 010-1.06z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="igx-modal__sub-header">
+        <div class="igx-modal__sub-header_section">
+            <b>Unique Identifier</b>: x157863
+        </div>
+        <div class="igx-modal__sub-header_section">
+            <b>Disclaimer Owner</b>: Legal Marketing Review
+        </div>
+        <div class="igx-modal__sub-header_section">
+            <b>Disclaimer Text Last Modified</b>: July 25, 2021, at 12:05 a.m. ET
+        </div>
+        <div class="igx-modal__sub-header_section">
+            <b>Disclaimer Usage Notes</b>: Use this disclosure on all marketing assets that mention the Relocation Cyber Monday offer for 0.50 points off current pricing.
+        </div>
+    </div>
+    <div class="igx-modal__body">
+        <span id="text2">
+            <p>Client will receive 0.50 discount points off current pricing. One point is equal to 1% of the loan amount. This offer is only available to clients who call the dedicated benefit phone number or go through the dedicated benefit website and lock their interest rate while completing the application process before 11:59 p.m. ET on December 1, 2020. Offer only valid on purchase and refinance loan amounts of $100,000 or higher. This offer cannot be retroactively applied to previously closed loans or loans already in process. Offer valid on team member referral loans. Offer does not apply to new loans submitted to Rocket Mortgage through a mortgage broker, non-agency jumbo loans, Charles Schwab loans, portfolio loans, United States Department of Agriculture (USDA) loans, agency plus loans, Rocket Pro loans or team member loans. Rocket Mortgage reserves the right to cancel this offer at any time. Acceptance of this offer constitutes acceptance of these terms and conditions, which are subject to change at the sole discretion of Rocket Mortgage. Offer is nontransferable. This is not a commitment to lend. Additional restrictions/conditions may apply. Offer valid only with additional Relocation Channel special incentives, which depend on qualifications. Any other promotions and offers are not valid.</p>
+        </span>
+
+    </div>
+    <div class="igx-modal__footer"></div>
+</div>

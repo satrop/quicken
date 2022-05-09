@@ -1,11 +1,24 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    Layout = "~/Pages/Shared/_TwoColumnLayout.cshtml";
+    ViewData["Title"] = "Jump page";
+    ViewData["PageClass"] = "theme-1";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="two-column-wrapper">
+    <ul>
+        <li>
+            <a asp-page="HomePage">Home Page</a>
+        </li>
+        <li>
+            <a asp-page="LibraryPage">Library Page</a>
+        </li>
+        <li>
+            <a asp-page="SearchResultsPage">Search Page</a>
+        </li>
+        <li>
+            <a asp-page="DocumentDetail">Document Detail</a>
+        </li>
+    </ul>
 </div>
-

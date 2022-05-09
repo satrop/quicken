@@ -1,4 +1,4 @@
-$(document).on('click', 'a[href^="#"]', function (event) {
+﻿$(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
@@ -183,14 +183,14 @@ $(".igx-fade, .igx-modal__header_close").on("click", function () {
 });
 
 //==== Copy -------------------------------------
-var clipboard = new ClipboardJS('button.copy-btn')
+//var clipboard = new ClipboardJS('button.copy-btn')
 
-clipboard.on('success', function(e) {
-    let oldtext = e.trigger.innerHTML
-    e.trigger.textContent = 'Copied!'
-    setTimeout(() => e.trigger.innerHTML = oldtext, 3000)
-    e.clearSelection();
-});
+//clipboard.on('success', function(e) {
+//    let oldtext = e.trigger.innerHTML
+//    e.trigger.textContent = 'Copied!'
+//    setTimeout(() => e.trigger.innerHTML = oldtext, 3000)
+//    e.clearSelection();
+//});
 
 //==== Truncate ---------------------------------
 var ogText = $('.search-results__item_extract');

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Quicken - @ViewData["Title"]</title>
+
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true">
+
+   
+</head>
+
+<body class="@ViewData["PageClass"]">
+    <partial name="_TopBarNav" />
+    <main>
+        <div class="container-fluid px-5">
+            <div class="row">
+                <partial name="_Leftnav.cshtml" />
+                <div class="col-12 col-xl-8 right-col">
+                    <div class="page-header">
+                        <h1>@ViewData["Title"]</h1>
+                    </div>
+                    @RenderBody()
+                    <footer>
+                        <span>Questions?</span> Email <a href="mailto:CCOEProcessBizGen@rocketmortgage.com">CCOEProcessBizGen@RocketMortgage.com</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery.js"></script>
+    <script src="js/clipboard.min.js" defer></script>
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/main.js" defe asp-append-version="true"></script>
+</body>
+</html>
